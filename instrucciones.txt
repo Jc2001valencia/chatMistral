@@ -1,0 +1,35 @@
+Instrucciones para usar la API de Hugging Face con Node.js
+Configuración inicial:
+
+Asegúrate de tener Node.js instalado en tu sistema.
+Obtén tu API Token:
+
+Crea una cuenta en Hugging Face si aún no la tienes.
+Copia tu token de API desde tu perfil de usuario.
+Configura tu proyecto:
+
+Crea un nuevo directorio para tu proyecto.
+Inicializa un proyecto de Node.js usando npm init -y.
+Instala las dependencias necesarias:
+
+Express para el servidor web: npm install express
+@huggingface/inference para interactuar con la API de Hugging Face: npm install @huggingface/inference
+dotenv para cargar variables de entorno: npm install dotenv
+cors para manejar las solicitudes CORS (si es necesario): npm install cors
+Crea un archivo .env:
+
+Crea un archivo llamado .env en el directorio raíz de tu proyecto.
+Dentro del archivo .env, coloca tu token de API de la siguiente manera:
+makefile
+Copiar código
+HF_API_KEY=tu_token_de_api_aqui
+Guarda y cierra el archivo .env. No lo compartas públicamente ni lo subas a repositorios de código.
+Escribe tu servidor:
+
+Crea un archivo server.js para configurar y ejecutar tu servidor utilizando Express y la API de Hugging Face.
+Inicia tu servidor:
+
+Ejecuta tu servidor Node.js con el comando node server.js.
+Interactúa con la API:
+
+Puedes hacer solicitudes POST a tu servidor para generar texto utilizando modelos de Hugging Face.
